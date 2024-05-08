@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .popup-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: slide-in 0.5s ease-out forwards, fade-in 1s ease-out forwards;
+        }
+        
+        .extension-icon {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .extension-icon:hover {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .features {
+            margin-top: 20px;
+        }
+        
+        footer {
+            margin-top: 20px;
+        }
+        
+        @keyframes slide-in {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Trình chặn quảng cáo YouTube</title>
+</head>
+
+<body>
+    <div class="popup-container">
+        <img src="icon.png" alt="Biểu tượng tiện ích mở rộng" class="extension-icon">
+        <h2>Trình chặn quảng cáo YouTube</h2>
+        <p>Chặn quảng cáo phiền phức trên YouTube và tận hưởng trải nghiệm xem không gián đoạn.</p>
+
+        <footer>
+            <h3>Tạo bởi <a href="https://wwww.facebook.com/F12FLASH" target="_blank">LoiGroups</a></h3>
+        </footer>
+    </div>
+</body>
+
+</html>
